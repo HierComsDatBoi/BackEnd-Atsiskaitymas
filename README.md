@@ -1,4 +1,4 @@
-# Sort, filter, pagination nepadaryta
+# Instrukcijos
 
 1. Parsisiųsti ir išarchyvuoti .zip failą.
 2. 'server' aplanke susikurti '.env' failą ir įklijuoti šią informaciją:
@@ -21,3 +21,5 @@ DB_COLLECTION=books
  5.1. Nusinaviguoti į /client aplanką.
  5.2. Paleisti 'npm i' komandą - parsiųsti viesiems reikalingiems moduliams.
  5.3. Paleisti 'npm start' komandą - paleisti puslapio projektą.
+
+## Sort, filter, pagination nepadaryta
