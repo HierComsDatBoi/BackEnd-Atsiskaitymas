@@ -20,7 +20,7 @@ app.listen(SERVER_PORT, () => console.log(`Server running on: http://localhost:$
 
 // Route: Get all books
 app.get('/books', async (req, res) => {
-  
+
   const filter = {};
   const sort = {
     rating: 1,
@@ -34,6 +34,28 @@ app.get('/books', async (req, res) => {
   try {
     client = await MongoClient.connect(DATABASE);
     const data = await client.db(DB_NAME).collection(DB_COLLECTION).find(filter).sort(sort).limit(limit).toArray();
+    res.send(data);
+
+  } catch (error) {
+    res.status(500).send({ message: 'Error fetching data', error });
+
+  } finally {
+    if (client) {
+      client.close();
+    }
+  }
+});
+
+//get specific
+
+app.get('/books/:id', async (req, res) => {
+
+  const filter = { "_id": req.params.id };
+
+  let client;
+  try {
+    client = await MongoClient.connect(DATABASE);
+    const data = await client.db(DB_NAME).collection(DB_COLLECTION).findOne(filter);
     res.send(data);
 
   } catch (error) {

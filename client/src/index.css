@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -9,17 +9,13 @@ body {
     sans-serif;
 }
 
-section{
-  min-height: calc(100vh - 60px - 100px);
+section {
+  min-height: calc(100vh - 86px - 260px);
   padding: 20px 30px;
 
-  > h2{
+  >h2 {
     font-size: 2.5rem;
     margin-top: 0;
     text-align: center;
   }
-}
-
-tr > td{
-  text-transform: capitalize;
 }
