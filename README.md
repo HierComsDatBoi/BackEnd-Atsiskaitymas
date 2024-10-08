@@ -18,4 +18,4 @@ DB_COLLECTION=books
 5. Antrame terminale:
  5.1. Nusinaviguoti į /client aplanką.
  5.2. Paleisti 'npm i' komandą - parsiųsti viesiems reikalingiems moduliams.
- 5.3. Paleisti 'npm start' komandą - paleisti puslapio programą.
+ 5.3. Paleisti 'npm start' komandą - paleisti puslapio projektą.
