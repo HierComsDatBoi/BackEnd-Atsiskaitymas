@@ -1,3 +1,5 @@
+# Sort, filter, pagination nepadaryta
+
 1. Parsisiųsti ir išarchyvuoti .zip failą.
 2. 'server' aplanke susikurti '.env' failą ir įklijuoti šią informaciją:
 
