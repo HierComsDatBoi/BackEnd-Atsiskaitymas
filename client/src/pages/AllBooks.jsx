@@ -9,13 +9,13 @@ const StyledSection = styled.section`
   button {
     border: none;
     border-radius: 5px;
-    background-color: gray;
+    background-color: orange;
     color: white;
-    padding: 10px 15px;
-
+    padding: 15px 25px;
+    font-size: 18px;
     &:hover {
       cursor: pointer;
-      background-color: orange;
+      background-color: gray;
     }
   }
 
